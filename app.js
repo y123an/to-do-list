@@ -15,7 +15,7 @@ app.use(express.static("public"));
 
 async function connect() {
   try {
-    await mongoose.connect("mongodb+srv://Ebishu:Yoniab23@cluster0.vx1dviu.mongodb.net/todolistDB");
+    await mongoose.connect("http://localhost:27017/tolistDB");
     console.log("database Connected")
   } catch (err) {
     console.error(err);
